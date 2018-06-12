@@ -1,14 +1,8 @@
 {
 	"scss": {
 		"src": "scss/**/*.scss",
-		"dest": "css/"
-	},
-	"js": {
-		"src": [
-			"js/main.js"
-		],
-		"dest": "js/"
+		"dest": "styles/"
 	},
 	"images": "images/**/*.{gif,jpg,png,svg}",
-	"html": "**/*.html"
+	"html": ["**/*.html", "!node_modules/**/*.*"]
 }

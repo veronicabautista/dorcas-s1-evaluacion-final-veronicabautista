@@ -1,75 +1,33 @@
 @import "_head.scss";
+@import "_page1.scss";
+@import "_page2.scss";
+@import "_footer.scss";
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  margin-top: 0;
 }
 
-h1, h2, h3, h4, {
+h1, h2, h3, h4, p {
     font-family: 'Roboto Slab', serif;
     margin: 0;
 }
 
-.page1 {
-  background-color: white;
-  padding: 30px 15px 30px 15px;
-  height: 40%;
-  width: 100%;
-}
-
-.pblue {
-  color: lightblue;
-  font-size: 14px;
-}
 
 h2 {
   font-size: 24px;
   text-transform: capitalize;
+  padding-bottom: 45px;
 }
 
-.button-go {
-    color: #f26002;
-    border: 2px solid;
-    width: 76px;
-    height: 45px;
-    border-radius: 22.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-top: 30px;
-    text-decoration: none;
-}
+
 
 a:link, a:hover, a:visited {
     text-decoration: none;
 }
 
-.page2 {
-  background-color: #eff9ff;
-  padding: 30px 15px 30px 15px;
-  text-align: center;
-}
 
-ul {
-  margin: 70px;
-  background-color: pink;
-  list-style: none;
-  margin-top: 45px;
-  margin-bottom: 150px;
-}
-
-li {
-  margin-top: 45px;
-}
-
-.button-more {
-  background-color: #f26002;
-  color: white  ;
-  width: 184px;
-  height: 45px;
-  border-radius: 22.5px;
-  font-size: 20px;
-  margin-top: 30px;
-
+.h3 {
+  font-size: 18px;
 }

@@ -48,7 +48,7 @@ h1 {
   text-align: center;
 }
 
-.button_down {
+.button-down {
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -69,16 +69,6 @@ h1 {
   position: absolute;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-
-h1,h2,h3,h4 {
-  font-family: 'Roboto Slab', serif;
-  margin: 0;
-}
-
 .page1 {
   background-color: white;
   padding: 30px 15px 30px 15px;
@@ -89,11 +79,6 @@ h1,h2,h3,h4 {
 .pblue {
   color: lightblue;
   font-size: 14px;
-}
-
-h2 {
-  font-size: 24px;
-  text-transform: capitalize;
 }
 
 .button-go {
@@ -116,36 +101,110 @@ h2 {
   text-decoration: none;
 }
 
-a:link,a:hover,a:visited {
-  text-decoration: none;
-}
-
 .page2 {
   background-color: #eff9ff;
-  padding: 30px 15px 30px 15px;
+  padding: 30px 15px 15px 15px;
   text-align: center;
 }
 
-ul {
-  margin: 70px;
-  background-color: pink;
-  list-style: none;
-  margin-top: 45px;
-  margin-bottom: 150px;
+.reasons-container {
+  display: grid;
+  grid-template-columns: 184px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-left: 70px;
+  padding-right: 70px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
 li {
-  margin-top: 45px;
+  list-style: none;
+  padding-bottom: 45px;
 }
 
 .button-more {
   background-color: #f26002;
-  color: white;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.link-more {
   font-size: 20px;
-  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #304268;
+  width: 100%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.button-up {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 22.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: -25%;
+  -webkit-transform: translateX(290%);
+  transform: translateX(290%);
+  position: absolute;
+}
+
+.orange {
+  color: orange;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+h1,h2,h3,h4,p {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+  padding-bottom: 45px;
+}
+
+a:link,a:hover,a:visited {
+  text-decoration: none;
+}
+
+.h3 {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

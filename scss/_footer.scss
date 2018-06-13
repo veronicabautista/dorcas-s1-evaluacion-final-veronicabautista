@@ -1,0 +1,28 @@
+footer {
+  background-color: #304268;
+  width: 100%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.button-up {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 22.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -25%;
+  transform: translateX(290%);
+  position: absolute;
+}
+
+.orange {
+  color: orange;
+}

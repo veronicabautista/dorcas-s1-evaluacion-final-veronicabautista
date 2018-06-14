@@ -1,5 +1,6 @@
 .page2 {
   background-color: #eff9ff;
+  font-family: $font;
   padding: 30px 15px 60px 15px;
   text-align: center;
   display: flex;
@@ -8,7 +9,6 @@
   align-content: center;
 
     @media all and (min-width: 768px) {
-
       font-size: 20px;
     }
     @media all and (min-width: 1280px) {
@@ -40,10 +40,10 @@
     @media all and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
+      grid-gap: 27px;
+      font-size: 20px;
     }
-    @media all and (min-width: 1280px) {
-      padding: 60px 85px 60px 85px;
-    }
+
 }
 
 li {
@@ -61,6 +61,7 @@ li {
    color: #f26002;
    background-color: white;
    border: 1px solid #f26002;
+   transition: color 0.8s linear 0.2s;
  }
 }
 

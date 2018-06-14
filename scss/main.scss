@@ -1,26 +1,31 @@
+@import "_variables.scss";
 @import "_head.scss";
 @import "_page1.scss";
 @import "_page2.scss";
 @import "_footer.scss";
-@import "_variales.scss";
 
 body {
-  font-size: 16px;
   margin: 0;
 }
 
-h1, h2, h3, h4, p {
-    margin: 0;
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, {
+  font-family: $titlesfont;
+  margin: 0;
 }
 
 
 h2 {
   font-size: 24px;
   text-transform: capitalize;
-  padding-bottom: 45px;
+  padding-bottom: 15px;
 
     @media all and (min-width: 768px) {
-      font-size: 26px
+      font-size: 26px;
+      padding-bottom: 30px;
     }
     @media all and (min-width: 1280px) {
       font-size: 32px;

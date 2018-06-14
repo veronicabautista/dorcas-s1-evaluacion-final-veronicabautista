@@ -23,10 +23,8 @@
 
     @media all and (min-width: 768px) {
       max-width: 100%;
-     }
-
+    }
 }
-
 
 .reasons {
   margin: 0;
@@ -43,7 +41,6 @@
       grid-gap: 27px;
       font-size: 20px;
     }
-
 }
 
 li {
@@ -62,7 +59,7 @@ li {
    background-color: white;
    border: 1px solid #f26002;
    transition: color 0.8s linear 0.2s;
- }
+  }
 }
 
 .link-more {

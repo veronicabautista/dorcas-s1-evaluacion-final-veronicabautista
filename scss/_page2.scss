@@ -1,9 +1,14 @@
 .page2 {
   background-color: #eff9ff;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 15px 60px 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
     @media all and (min-width: 768px) {
-      padding: 40px 30px 40px 60px;
+
       font-size: 20px;
     }
     @media all and (min-width: 1280px) {
@@ -11,18 +16,37 @@
     }
 }
 
+
 .reasons-container {
+  max-width: 184px;
+  margin: 0 auto;
+
+    @media all and (min-width: 768px) {
+      max-width: 100%;
+     }
+
+}
+
+
+.reasons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
-  grid-template-columns: 184px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding-left: 70px;
-  padding-right: 70px;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   font-size: 18px;
+
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @media all and (min-width: 1280px) {
+      padding: 60px 85px 60px 85px;
+    }
 }
 
 li {
-  list-style: none;
   padding-bottom: 45px;
 }
 
@@ -31,9 +55,8 @@ li {
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 45px;
+  display: inline-block;
    &:hover {
    color: #f26002;
    background-color: white;

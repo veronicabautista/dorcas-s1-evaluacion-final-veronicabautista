@@ -8,6 +8,7 @@ footer {
   padding-top: 38px;
   padding-bottom: 30px;
   position: relative;
+  line-height: 30px;
 }
 
 .button-up {
@@ -19,10 +20,16 @@ footer {
   align-items: center;
   justify-content: center;
   top: -25%;
-  transform: translateX(290%);
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
+  box-shadow: 2px 5px 5px #000;
+    &:hover {
+      background-color: black;
+}
 }
 
+
 .orange {
-  color: orange;
+  color: #f26002;
 }

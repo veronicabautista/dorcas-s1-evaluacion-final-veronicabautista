@@ -2,7 +2,6 @@
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
   background-size: cover;
   background-position: center;
   color: white;
@@ -13,9 +12,12 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
@@ -36,16 +38,19 @@
 }
 
 .encabezado {
-  margin-top: 60%;
+  text-align: center;
 }
 
 h1 {
   color: white;
-  padding: 15px;
   text-transform: uppercase;
   font-size: 42px;
   font-weight: bold;
   text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
 }
 
 .button-down {
@@ -69,11 +74,15 @@ h1 {
   position: absolute;
 }
 
+.button-down:hover {
+  background-color: black;
+}
+
 .page1 {
   background-color: white;
-  padding: 30px 15px 30px 15px;
+  padding: 30px 15px 45px 15px;
   height: 40%;
-  width: 100%;
+  font-size: 18px;
 }
 
 .pblue {
@@ -99,6 +108,11 @@ h1 {
   font-size: 20px;
   margin-top: 30px;
   text-decoration: none;
+}
+
+.button-go:hover {
+  color: white;
+  background-color: #f26002;
 }
 
 .page2 {
@@ -140,6 +154,12 @@ li {
   align-items: center;
 }
 
+.button-more:hover {
+  color: #f26002;
+  background-color: white;
+  border: 1px solid #f26002;
+}
+
 .link-more {
   font-size: 20px;
   color: white;
@@ -156,6 +176,7 @@ footer {
   padding-top: 38px;
   padding-bottom: 30px;
   position: relative;
+  line-height: 30px;
 }
 
 .button-up {
@@ -173,19 +194,26 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   top: -25%;
-  -webkit-transform: translateX(290%);
-  transform: translateX(290%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
+  -webkit-box-shadow: 2px 5px 5px #000;
+  box-shadow: 2px 5px 5px #000;
+}
+
+.button-up:hover {
+  background-color: black;
 }
 
 .orange {
-  color: orange;
+  color: #f26002;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin-top: 0;
+  margin: 0;
 }
 
 h1,h2,h3,h4,p {
@@ -203,8 +231,80 @@ a:link,a:hover,a:visited {
   text-decoration: none;
 }
 
-.h3 {
+h3 {
   font-size: 18px;
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .button-down {
+    bottom: 45px;
+  }
+
+  .page1 {
+    padding: 30px 39px 60px 39px;
+    font-size: 20px;
+  }
+
+  .button-go {
+    width: 91px;
+  }
+
+  .page2 {
+    padding: 40px 30px 40px 60px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .hero {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .button-down {
+    bottom: 13px;
+  }
+
+  .page1 {
+    padding: 60px 275px 60px 275px;
+  }
+
+  .pblue {
+    font-size: 16px;
+  }
+
+  .button-go {
+    width: 160px;
+  }
+
+  .page2 {
+    padding: 60px 85px 60px 85px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

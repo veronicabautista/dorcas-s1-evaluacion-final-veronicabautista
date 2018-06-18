@@ -1,0 +1,19 @@
+.proxy {
+  background-color: $background-movile;
+  color: white;
+  padding: 10px 20px 15px 20px;
+
+  @media all and (min-width:768px) {
+    background-color: $background-big;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+  }
+}
